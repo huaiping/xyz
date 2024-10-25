@@ -6,21 +6,11 @@ use CodeIgniter\Model;
 
 class StudentModel extends Model
 {
-    //protected $table = 'students';
-
     public function getStudent()
         {
-            //if ($id === false) {
-                //return $this->findAll();
-            //}
-
-            //return $this->where(['xh' => $id])->first();
-
             $db = \Config\Database::connect();
-            $query = $db->query('SELECT xh, xm, sfzh FROM students');
+            $query = $db->query('SELECT xh, xm, xb, sfzh, fqxm, fqdh, mqxm, mqdh, jtzz, zkf, czbyxx, gqty, qsh, bz FROM students');
             $results = $query->getResult();
             return $results;
-
         }
-
 }

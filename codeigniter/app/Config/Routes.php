@@ -8,3 +8,7 @@ use CodeIgniter\Router\RouteCollection;
 $routes->get('/', 'Home::index');
 
 $routes->get('student', 'Student::index');
+$routes->get('student/get_json', 'Student::get_json');
+
+$routes->get('teacher', 'Teacher::index');
+$routes->get('teacher/get_json', 'Teacher::get_json');

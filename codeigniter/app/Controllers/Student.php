@@ -3,18 +3,19 @@
 namespace App\Controllers;
 
 use App\Models\StudentModel;
-//use CodeIgniter\Exceptions\PageNotFoundException;
 
 class Student extends BaseController
 {
-    //public function index(): string
     public function index()
     {
+        return view('student');
+    }
+
+    public function get_json()
+    {
         $model = model(StudentModel::class);
-
-        $data['students'] = $model->getStudent();
-
-        return view('student', $data);
-        //return view('student');
+        $students = $model->getStudent();
+        $data['students'] = json_encode($students);
+        echo $data['students'];
     }
 }
