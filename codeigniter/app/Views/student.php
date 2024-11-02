@@ -48,6 +48,7 @@ $(document).ready(function(){
         pagination: true,
         pageSize: 14,
         pageList: [10, 20, 30],
+        showRefresh: true,
         showColumns: true,
         minimumCountColumns: 2,
         columns: [{
