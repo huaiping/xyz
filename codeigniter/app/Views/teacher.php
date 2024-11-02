@@ -16,7 +16,7 @@
 <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary" data-bs-theme="dark">
     <div class="container-fluid">
-        <div class="navbar-brand">信息管理平台</div>
+        <div class="navbar-brand">综合信息服务管理平台</div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
