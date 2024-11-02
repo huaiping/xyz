@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="utf-8">
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>教师基本信息</title>
-    <link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/bootstrap-table/1.23.1/bootstrap-table.min.css">
-    <link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <style>
-    </style>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>教师基本信息</title>
+<link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/bootstrap-table/1.23.1/bootstrap-table.min.css">
+<link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<style>
+</style>
 </head>
 <body>
 <div>
@@ -37,7 +37,7 @@ $(document).ready(function(){
         pagination: true,
         pageNumber: 1,
         pageSize: 14,
-        pageList: [30, 50, 100],
+        pageList: [10, 20, 30],
         showRefresh: true,
         showColumns: true,
         minimumCountColumns: 2,
@@ -45,8 +45,6 @@ $(document).ready(function(){
         showExport: true,
         exportDataType: 'basic',
         exportTypes: ['excel', 'csv', 'xlsx'],
-        buttonsAlign: "right",
-        Icons: 'glyphicon-export',
         exportOptions: {
             fileName: '教师基本信息' + Date.now(),
             worksheetName: 'teacher'
@@ -82,6 +80,7 @@ $(document).ready(function(){
         }, {
             field: 'sfzh',
             title: '身份证号',
+            align: 'center',
             visible: false
         }, {
             field: 'cjgz',
@@ -94,13 +93,16 @@ $(document).ready(function(){
         }, {
             field: 'lxdh',
             title: '联系电话',
+            align: 'center',
             visible: false
         }, {
             field: 'byyx',
-            title: '毕业院校'
+            title: '毕业院校',
+            align: 'center'
         }, {
             field: 'zy',
-            title: '专业'
+            title: '专业',
+            align: 'center'
         }, {
             field: 'xl',
             title: '最高学历',
@@ -117,8 +119,14 @@ $(document).ready(function(){
             align: 'center',
             sortable: true
         }, {
+            field: '普通话',
+            title: '普通话',
+            align: 'center',
+            sortable: true
+        }, {
             field: 'bz',
-            title: '备注'
+            title: '备注',
+            align: 'center'
         }],
         striped: true
     })

@@ -36,7 +36,7 @@ $(document).ready(function(){
         search: true,
         pagination: true,
         pageSize: 14,
-        pageList: [30, 50, 100],
+        pageList: [10, 20, 30],
         showColumns: true,
         minimumCountColumns: 2,
         columns: [{
@@ -46,7 +46,8 @@ $(document).ready(function(){
             sortable: true
         }, {
             field: 'xm',
-            title: '姓名'
+            title: '姓名',
+            align: 'center'
         }, {
             field: 'xb',
             title: '性别',
@@ -54,19 +55,24 @@ $(document).ready(function(){
             sortable: true
         }, {
             field: 'sfzh',
-            title: '身份证号'
+            title: '身份证号',
+            align: 'center'
         }, {
             field: 'fqxm',
-            title: '父亲'
+            title: '父亲',
+            align: 'center'
         }, {
             field: 'fqdh',
-            title: '电话'
+            title: '电话',
+            align: 'center'
         }, {
             field: 'mqxm',
-            title: '母亲'
+            title: '母亲',
+            align: 'center'
         }, {
             field: 'mqdh',
-            title: '电话'
+            title: '电话',
+            align: 'center'
         }, {
             field: 'jtzz',
             title: '详细家庭住址',
@@ -88,7 +94,8 @@ $(document).ready(function(){
             title: '寝室'
         }, {
             field: 'bz',
-            title: '备注'
+            title: '备注',
+            align: 'center'
         }],
         striped: true
     })
