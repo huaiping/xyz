@@ -132,10 +132,10 @@ $(document).ready(function(){
     })
 });
 $(document).bind("contextmenu",function(){
-  return false;
+    return false;
 });
 $(document).bind("selectstart",function(){
-  return false;
+    return false;
 });
 </script>
 </body>
