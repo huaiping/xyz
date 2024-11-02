@@ -14,6 +14,22 @@
 </style>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+        <div class="navbar-brand">信息管理平台</div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">首页</a>
+                <a class="nav-link" href="https://mcyz.rf.gd/codeigniter/student">学生基本信息</a>
+                <a class="nav-link" href="https://mcyz.rf.gd/codeigniter/teacher">教师基本信息</a>
+                <a class="nav-link disabled">登陆</a>
+            </div>
+        </div>
+    </div>
+</nav>
 <div>
     <div id="toolbar"></div>
     <table id="dataTable" class="table table-striped table-bordered">
