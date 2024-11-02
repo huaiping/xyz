@@ -15,27 +15,37 @@ CREATE TABLE IF NOT EXISTS `students` (
     `fqdh` varchar(11) NOT NULL,
     `mqxm` varchar(16) NOT NULL,
     `mqdh` varchar(11) NOT NULL,
-    `jtzz` varchar(200) NOT NULL,
+    `xxjtzz` varchar(200) NOT NULL,
     `zkf` varchar(6) NOT NULL,
     `czbyxx` varchar(120) NOT NULL,
     `gqty` varchar(16) NOT NULL,
     `qsh` varchar(30) NOT NULL,
-    `bz` varchar(60) NOT NULL
+    `gkf` varchar(6) NOT NULL,
+    `dxlqyx` varchar(120) NOT NULL,
+    `lqzy` varchar(80) NOT NULL,
+    `bz` varchar(60) NOT NULL,
+    `rxnf` varchar(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `teachers` (
     `xm` varchar(16) NOT NULL,
     `xb` varchar(4) NOT NULL,
     `mz` varchar(20) NOT NULL,
-    `xk` varchar(20) NOT NULL,
+    `rjxk` varchar(20) NOT NULL,
     `sfzh` varchar(18) NOT NULL,
-    `cjgz` varchar(10) NOT NULL,
+    `cjgzsj` varchar(10) NOT NULL,
     `csny` varchar(10) NOT NULL,
     `lxdh` varchar(11) NOT NULL,
     `byyx` varchar(120) NOT NULL,
     `zy` varchar(60) NOT NULL,
+    `zqxl` varchar(20) NOT NULL,
+    `zqxw` varchar(20) NOT NULL,
     `xl` varchar(20) NOT NULL,
     `xw` varchar(20) NOT NULL,
+    `pth` varchar(20) NOT NULL,
+    `zyjszw` varchar(30) NOT NULL,
+    `zszg` varchar(30) NOT NULL,
+    `gwdj` varchar(30) NOT NULL,
     `bm` varchar(20) NOT NULL,
     `bz` varchar(60) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -43,7 +53,7 @@ CREATE TABLE IF NOT EXISTS `teachers` (
 CREATE TABLE IF NOT EXISTS `members` (
     `id` int NOT NULL AUTO_INCREMENT,
     `account` varchar(11) NOT NULL,
-    `password` varchar(12) NOT NULL,
+    `password` varchar(64) NOT NULL,
     `memo` varchar(20) NOT NULL,
     `status` varchar(20) NOT NULL,
     PRIMARY KEY (`id`)

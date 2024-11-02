@@ -47,7 +47,7 @@ $(document).ready(function(){
         search: true,
         pagination: true,
         pageSize: 14,
-        pageList: [10, 20, 30],
+        pageList: [10, 18, 30],
         showRefresh: true,
         showColumns: true,
         minimumCountColumns: 2,
@@ -104,6 +104,21 @@ $(document).ready(function(){
         }, {
             field: 'qsh',
             title: '寝室'
+        }, {
+            field: 'gkf',
+            title: '高考分',
+            align: 'center',
+            visible: false
+        }, {
+            field: '大学录取院校',
+            title: '大学录取院校',
+            align: 'center',
+            visible: false
+        }, {
+            field: '录取专业',
+            title: '录取专业',
+            align: 'center',
+            visible: false
         }, {
             field: 'bz',
             title: '备注',

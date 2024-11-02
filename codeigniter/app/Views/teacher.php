@@ -48,7 +48,7 @@ $(document).ready(function(){
         pagination: true,
         pageNumber: 1,
         pageSize: 14,
-        pageList: [10, 20, 30],
+        pageList: [10, 18, 30],
         showRefresh: true,
         showColumns: true,
         minimumCountColumns: 2,
@@ -115,23 +115,42 @@ $(document).ready(function(){
             title: '专业',
             align: 'center'
         }, {
+            field: '职前学历',
+            title: '职前学历',
+            align: 'center'
+        }, {
+            field: '职前学位',
+            title: '职前学位',
+            align: 'center'
+        }, {
             field: 'xl',
             title: '最高学历',
-            align: 'center',
-            sortable: true
+            align: 'center'
         }, {
             field: 'xw',
             title: '学位',
+            align: 'center'
+        }, {
+            field: '普通话',
+            title: '普通话',
+            align: 'center',
+            sortable: true
+        }, {
+            field: '专业技术职务',
+            title: '专业技术职务',
+            align: 'center'
+        }, {
+            field: '教师资格',
+            title: '教师资格',
+            align: 'center'
+        }, {
+            field: '岗位等级',
+            title: '岗位等级',
             align: 'center',
             sortable: true
         }, {
             field: 'bm',
             title: '部门',
-            align: 'center',
-            sortable: true
-        }, {
-            field: '普通话',
-            title: '普通话',
             align: 'center',
             sortable: true
         }, {
