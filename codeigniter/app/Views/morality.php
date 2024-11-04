@@ -91,7 +91,7 @@ $(document).ready(function(){
             title: '校园社团文化',
             align: 'center'
         }, {
-            field: 'gyhd',
+            field: 'gyld',
             title: '公益劳动',
             align: 'center'
         }, {
@@ -99,15 +99,15 @@ $(document).ready(function(){
             title: '日常行为',
             align: 'center'
         }, {
-            field: '宿舍表现',
+            field: 'ssbx',
             title: '宿舍表现',
             align: 'center'
         }, {
-            field: '奖励分',
+            field: 'jlf',
             title: '奖励分',
             align: 'center'
         }, {
-            field: '扣分',
+            field: 'kf',
             title: '扣分',
             align: 'center'
         }, {

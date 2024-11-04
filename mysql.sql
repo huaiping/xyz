@@ -58,3 +58,23 @@ CREATE TABLE IF NOT EXISTS `members` (
     `status` varchar(20) NOT NULL,
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `morality` (
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `xh` varchar(6) NOT NULL,
+    `xm` varchar(16) NOT NULL,
+    `sfzh` varchar(18) NOT NULL,
+    `dyjf` int(3) DEFAULT 0 NOT NULL,
+    `dyxf` int(2) DEFAULT 0 NOT NULL,
+    `sxzzsz` int(2) NOT NULL,
+    `bjthd` int(2) NOT NULL,
+    `yjxxx` int(2) NOT NULL,
+    `xystwh` int(2) NOT NULL,
+    `gyld` int(2) NOT NULL,
+    `rcxw` int(2) NOT NULL,
+    `ssbx` int(2) NOT NULL,
+    `jlf` int(2) DEFAULT 0 NOT NULL,
+    `kf` int(2) DEFAULT 0 NOT NULL,
+    `bz` varchar(60) NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
