@@ -4,7 +4,6 @@
 <meta charset="utf-8">
 <meta name="renderer" content="webkit">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>德育积分信息</title>
 <link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
@@ -69,7 +68,8 @@ $(document).ready(function(){
         }, {
             field: 'dyjf',
             title: '德育积分',
-            align: 'center'
+            align: 'center',
+            sortable: true
         }, {
             field: 'dyxf',
             title: '学分',
@@ -103,8 +103,12 @@ $(document).ready(function(){
             title: '宿舍表现',
             align: 'center'
         }, {
-            field: 'bonus',
-            title: '奖励分/扣分',
+            field: '奖励分',
+            title: '奖励分',
+            align: 'center'
+        }, {
+            field: '扣分',
+            title: '扣分',
             align: 'center'
         }, {
             field: 'bz',
