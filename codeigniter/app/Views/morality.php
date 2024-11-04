@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <meta name="renderer" content="webkit">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>教师基本信息</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>德育积分信息</title>
 <link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
 <link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/bootstrap-table/1.23.2/bootstrap-table.min.css">
@@ -42,119 +43,69 @@
 <script>
 $(document).ready(function(){
     $("#dataTable").bootstrapTable({
-        url: './teacher/get_json',
+        url: './morality/get_json',
         method: 'get',
         search: true,
         pagination: true,
-        pageNumber: 1,
         pageSize: 12,
-        pageList: [12, 18],
+        pageList: [12, 18, 70],
         showRefresh: true,
         showColumns: true,
         minimumCountColumns: 2,
-        toolbar: '#toolbar',
-        showExport: true,
-        exportDataType: 'basic',
-        exportTypes: ['excel', 'csv', 'xlsx'],
-        exportOptions: {
-            fileName: '教师基本信息' + Date.now(),
-            worksheetName: 'teacher'
-        },
         columns: [{
+            field: 'xh',
+            title: '学号',
+            align: 'center',
+            sortable: true
+        }, {
             field: 'xm',
             title: '姓名',
             align: 'center'
-        }, {
-            field: 'xb',
-            title: '性别',
-            align: 'center',
-            sortable: true
-        }, {
-            field: 'mz',
-            title: '民族',
-            align: 'center',
-            sortable: true
-        }, {
-            field: '籍贯',
-            title: '籍贯',
-            align: 'center'
-        }, {
-            field: '政治面貌',
-            title: '政治面貌',
-            align: 'center',
-            sortable: true
-        }, {
-            field: 'xk',
-            title: '任教学科',
-            align: 'center',
-            sortable: true
         }, {
             field: 'sfzh',
             title: '身份证号',
             align: 'center',
             visible: false
         }, {
-            field: 'cjgz',
-            title: '参加工作时间',
+            field: 'dyjf',
+            title: '德育积分',
             align: 'center'
         }, {
-            field: 'csny',
-            title: '出生年月',
+            field: 'dyxf',
+            title: '学分',
             align: 'center'
         }, {
-            field: 'lxdh',
-            title: '联系电话',
-            align: 'center',
-            visible: false
-        }, {
-            field: 'byyx',
-            title: '毕业院校',
+            field: 'sxzzsz',
+            title: '政治思想素质',
             align: 'center'
         }, {
-            field: 'zy',
-            title: '专业',
+            field: 'bjthd',
+            title: '班集体活动',
             align: 'center'
         }, {
-            field: '职前学历',
-            title: '职前学历',
-            align: 'center',
-            visible: false
-        }, {
-            field: '职前学位',
-            title: '职前学位',
-            align: 'center',
-            visible: false
-        }, {
-            field: 'xl',
-            title: '最高学历',
+            field: 'yjxxx',
+            title: '研究性学习',
             align: 'center'
         }, {
-            field: 'xw',
-            title: '学位',
+            field: 'xystwh',
+            title: '校园社团文化',
             align: 'center'
         }, {
-            field: '普通话',
-            title: '普通话',
-            align: 'center',
-            sortable: true
-        }, {
-            field: '专业技术职务',
-            title: '专业技术职务',
+            field: 'gyhd',
+            title: '公益劳动',
             align: 'center'
         }, {
-            field: '教师资格',
-            title: '教师资格',
+            field: 'rcxw',
+            title: '日常行为',
             align: 'center'
         }, {
-            field: '岗位等级',
-            title: '岗位等级',
-            align: 'center',
-            sortable: true
+            field: '宿舍表现',
+            title: '宿舍表现',
+            align: 'center'
         }, {
-            field: 'bm',
-            title: '部门',
-            align: 'center',
-            sortable: true
+            field: 'bonus',
+            title: '奖励分/扣分',
+            align: 'center'
         }, {
             field: 'bz',
             title: '备注',

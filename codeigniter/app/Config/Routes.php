@@ -12,3 +12,6 @@ $routes->get('student/get_json', 'Student::get_json');
 
 $routes->get('teacher', 'Teacher::index');
 $routes->get('teacher/get_json', 'Teacher::get_json');
+
+$routes->get('morality', 'Morality::index');
+$routes->get('morality/get_json', 'Morality::get_json');
