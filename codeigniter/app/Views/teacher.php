@@ -21,6 +21,7 @@
             <a class="nav-link text-white" href="https://mcyz.rf.gd/codeigniter/student">学生基本信息</a>
             <a class="nav-link text-white" href="https://mcyz.rf.gd/codeigniter/teacher">教师基本信息</a>
             <a class="nav-link text-white" href="https://mcyz.rf.gd/codeigniter/morality">德育积分信息</a>
+            <a class="nav-link text-white" href="#">校本资源库</a>
             <a class="nav-link text-white" href="#">登录</a>
         </div>
     </div>
@@ -136,7 +137,7 @@ $(document).ready(function(){
             field: '普通话',
             title: '普通话',
             align: 'center',
-            sortable: true
+            visible: false
         }, {
             field: '专业技术职务',
             title: '专业技术职务',

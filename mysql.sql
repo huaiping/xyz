@@ -7,6 +7,7 @@ CREATE TABLE IF NOT EXISTS `ci_sessions` (
 );
 
 CREATE TABLE IF NOT EXISTS `students` (
+    `id` int NOT NULL AUTO_INCREMENT,
     `xh` varchar(6) NOT NULL,
     `xm` varchar(16) NOT NULL,
     `xb` varchar(4) NOT NULL,
@@ -24,10 +25,12 @@ CREATE TABLE IF NOT EXISTS `students` (
     `dxlqyx` varchar(120) NOT NULL,
     `lqzy` varchar(80) NOT NULL,
     `bz` varchar(60) NOT NULL,
-    `rxnf` varchar(4) NOT NULL
+    `rxnf` varchar(4) NOT NULL,
+    PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `teachers` (
+    `id` int NOT NULL AUTO_INCREMENT,
     `xm` varchar(16) NOT NULL,
     `xb` varchar(4) NOT NULL,
     `mz` varchar(20) NOT NULL,
@@ -47,32 +50,34 @@ CREATE TABLE IF NOT EXISTS `teachers` (
     `zszg` varchar(30) NOT NULL,
     `gwdj` varchar(30) NOT NULL,
     `bm` varchar(20) NOT NULL,
-    `bz` varchar(60) NOT NULL
+    `bz` varchar(60) NOT NULL,
+    PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `members` (
     `id` int NOT NULL AUTO_INCREMENT,
     `account` varchar(11) NOT NULL,
     `password` varchar(64) NOT NULL,
-    `memo` varchar(20) NOT NULL,
+    `name` varchar(16) NOT NULL,
+    `group` varchar(20) NOT NULL,
     `status` varchar(20) NOT NULL,
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 CREATE TABLE IF NOT EXISTS `morality` (
-    `id` int(11) NOT NULL AUTO_INCREMENT,
+    `id` int NOT NULL AUTO_INCREMENT,
     `xh` varchar(6) NOT NULL,
     `xm` varchar(16) NOT NULL,
     `sfzh` varchar(18) NOT NULL,
     `dyjf` int(3) DEFAULT 0 NOT NULL,
     `dyxf` int(2) DEFAULT 0 NOT NULL,
-    `sxzzsz` int(2) NOT NULL,
-    `bjthd` int(2) NOT NULL,
-    `yjxxx` int(2) NOT NULL,
-    `xystwh` int(2) NOT NULL,
-    `gyld` int(2) NOT NULL,
-    `rcxw` int(2) NOT NULL,
-    `ssbx` int(2) NOT NULL,
+    `sxzzsz` int(2) DEFAULT 0 NOT NULL,
+    `jthd` int(2) DEFAULT 0 NOT NULL,
+    `yjxxx` int(2) DEFAULT 0 NOT NULL,
+    `xystwh` int(2) DEFAULT 0 NOT NULL,
+    `gyld` int(2) DEFAULT 0 NOT NULL,
+    `rcxw` int(2) DEFAULT 0 NOT NULL,
+    `ssbx` int(2) DEFAULT 0 NOT NULL,
     `jlf` int(2) DEFAULT 0 NOT NULL,
     `kf` int(2) DEFAULT 0 NOT NULL,
     `bz` varchar(60) NOT NULL,

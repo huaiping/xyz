@@ -17,7 +17,7 @@ class MoralityModel extends Model
             //return $this->where(['xh' => $id])->first();
 
             $db = \Config\Database::connect();
-            $query = $db->query('SELECT xh, xm, sfzh, dyjf, dyxf, sxzzsz, bjthd, yjxxx, xystwh, gyld, rcxw, ssbx, jlf, kf, bz FROM morality');
+            $query = $db->query('SELECT xh, xm, sfzh, (sxzzsz+jthd+yjxxx+xystwh+gyld+rcxw+ssbx+jlf+kf) as dyjf, dyxf, sxzzsz, jthd, yjxxx, xystwh, gyld, rcxw, ssbx, jlf, kf, bz FROM morality');
             $results = $query->getResult();
             return $results;
 
