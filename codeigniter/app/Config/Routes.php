@@ -15,3 +15,7 @@ $routes->get('teacher/get_json', 'Teacher::get_json');
 
 $routes->get('morality', 'Morality::index');
 $routes->get('morality/get_json', 'Morality::get_json');
+
+$routes->get('library', 'Library::index');
+
+$routes->get('login', 'Login::index');

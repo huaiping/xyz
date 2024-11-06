@@ -21,15 +21,14 @@
             <a class="nav-link text-white" href="https://mcyz.rf.gd/codeigniter/student">学生基本信息</a>
             <a class="nav-link text-white" href="https://mcyz.rf.gd/codeigniter/teacher">教师基本信息</a>
             <a class="nav-link text-white" href="https://mcyz.rf.gd/codeigniter/morality">德育积分信息</a>
-            <a class="nav-link text-white" href="#">校本资源库</a>
-            <a class="nav-link text-white" href="#">登录</a>
+            <a class="nav-link text-white" href="https://mcyz.rf.gd/codeigniter/library">校本资源库</a>
+            <a class="nav-link text-white" href="https://mcyz.rf.gd/codeigniter/login">登录</a>
         </div>
     </div>
 </nav>
 <div>
     <div id="toolbar"></div>
-    <table id="dataTable" class="table table-striped table-bordered">
-    </table>
+    <table id="dataTable" class="table table-striped table-bordered"></table>
 </div>
 <script src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/popper.js/2.11.8/umd/popper.js"></script>
