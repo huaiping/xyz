@@ -21,7 +21,7 @@
             <a class="nav-link text-white" href="https://mcyz.rf.gd/codeigniter/teacher">教师基本信息</a>
             <a class="nav-link text-white" href="https://mcyz.rf.gd/codeigniter/morality">德育积分信息</a>
             <a class="nav-link text-white" href="https://mcyz.rf.gd/codeigniter/library">校本资源库</a>
-            <a class="nav-link text-white" href="https://mcyz.rf.gd/codeigniter/login">登录</a>
+            <a class="nav-link text-white" href="https://mcyz.rf.gd/codeigniter/logout">退出</a>
         </div>
     </div>
 </nav>

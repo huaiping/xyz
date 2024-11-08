@@ -18,4 +18,5 @@ $routes->get('morality/get_json', 'Morality::get_json');
 
 $routes->get('library', 'Library::index');
 
-$routes->get('login', 'Login::index');
+$routes->get('login', 'Home::login');
+$routes->get('logout', 'Home::logout');
