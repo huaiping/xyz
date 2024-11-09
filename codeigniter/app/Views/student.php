@@ -26,7 +26,17 @@
     </div>
 </nav>
 <div class="p-2">
-    <div id="toolbar"></div>
+    <div id="toolbar">
+        <form class="form-inline">
+            <select class="form-control" id="grade">
+                <option value="2022">2022级</option>
+                <option value="2023">2023级</option>
+                <option value="2024" selected>2024级</option>
+                <option value="2025">2025级</option>
+            </select>
+            <button type="button" class="btn btn-primary">查询</button>
+        </form>
+        </div>
     <table id="dataTable" class="table table-striped table-bordered"></table>
 </div>
 <script src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -43,10 +53,11 @@ $(document).ready(function(){
     $("#dataTable").bootstrapTable({
         url: './student/get_json',
         method: 'get',
+        toolbar: '#toolbar',
         search: true,
         pagination: true,
         pageSize: 12,
-        pageList: [12, 17],
+        pageList: [12, 17, 25],
         striped: true,
         showRefresh: true,
         showColumns: true,
@@ -59,7 +70,8 @@ $(document).ready(function(){
         }, {
             field: 'xm',
             title: '姓名',
-            align: 'center'
+            align: 'center',
+            switchable: false
         }, {
             field: 'xb',
             title: '性别',
@@ -103,7 +115,8 @@ $(document).ready(function(){
             sortable: true
         }, {
             field: 'qsh',
-            title: '寝室'
+            title: '寝室号',
+            align: 'center'
         }, {
             field: 'gkf',
             title: '高考分',
