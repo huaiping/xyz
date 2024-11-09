@@ -27,16 +27,20 @@
 </nav>
 <div class="p-2">
     <div id="toolbar">
-        <form class="form-inline">
-            <select class="form-control" id="grade">
-                <option value="2022">2022级</option>
-                <option value="2023">2023级</option>
-                <option value="2024" selected>2024级</option>
-                <option value="2025">2025级</option>
+        <form class="form-inline float-left">
+            <select class="form-control float-left" id="grade"  style="width:auto;">
+                <option value="2023" selected>2023级</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
             </select>
-            <button type="button" class="btn btn-primary">查询</button>
+            <select class="form-control float-left" id="class" style="width:auto; margin-left:10px;">
+                <option value="1">1班</option>
+                <option value="2">2班</option>
+                <option value="3">3班</option>
+            </select>
+            <button type="button" class="btn btn-success float-left" style="width:auto; margin-left:10px;">查询</button>
         </form>
-        </div>
+    </div>
     <table id="dataTable" class="table table-striped table-bordered"></table>
 </div>
 <script src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
