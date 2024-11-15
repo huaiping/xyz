@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" />
 <link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
 <link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/bootstrap-table/1.23.2/bootstrap-table.min.css" />
-<link rel="stylesheet" href="https://mcyz.rf.gd/bootstrap4-editable/css/bootstrap-editable.css" />
+<link rel="stylesheet" href="https://mcyz.rf.gd/bootstrap5-editable/css/bootstrap-editable.css" />
 <link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 <style>
 </style>
@@ -35,7 +35,7 @@
 <script src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.min.js"></script>
 <script src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/bootstrap-table/1.23.2/bootstrap-table.min.js"></script>
 <script src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/bootstrap-table/1.23.2/locale/bootstrap-table-zh-CN.min.js"></script>
-<script src="https://mcyz.rf.gd/bootstrap4-editable/js/bootstrap-editable.min.js"></script>
+<script src="https://mcyz.rf.gd/bootstrap5-editable/js/bootstrap-editable.min.js"></script>
 <script src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/bootstrap-table/1.23.2/extensions/editable/bootstrap-table-editable.min.js"></script>
 <script src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/bootstrap-table/1.23.2/extensions/export/bootstrap-table-export.min.js"></script>
 <script src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
@@ -82,7 +82,7 @@ $(document).ready(function(){
             title: '政治思想素质',
             align: 'center',
             editable: {
-                mode: 'inline',
+                mode: 'popup',
                 type: 'number',
                 title: '分数',
                 validate: function (value) {
@@ -96,7 +96,7 @@ $(document).ready(function(){
             title: '集体活动',
             align: 'center',
             editable: {
-                mode: 'inline',
+                mode: 'popup',
                 type: 'number',
                 title: '分数',
                 validate: function (value) {
@@ -110,7 +110,7 @@ $(document).ready(function(){
             title: '研究性学习',
             align: 'center',
             editable: {
-                mode: 'inline',
+                mode: 'popup',
                 type: 'number',
                 title: '分数',
                 validate: function (value) {
@@ -124,7 +124,7 @@ $(document).ready(function(){
             title: '校园社团文化',
             align: 'center',
             editable: {
-                mode: 'inline',
+                mode: 'popup',
                 type: 'number',
                 title: '分数',
                 validate: function (value) {
@@ -138,7 +138,7 @@ $(document).ready(function(){
             title: '公益劳动',
             align: 'center',
             editable: {
-                mode: 'inline',
+                mode: 'popup',
                 type: 'number',
                 title: '分数',
                 validate: function (value) {
@@ -152,7 +152,7 @@ $(document).ready(function(){
             title: '日常行为',
             align: 'center',
             editable: {
-                mode: 'inline',
+                mode: 'popup',
                 type: 'number',
                 title: '分数',
                 validate: function (value) {
@@ -166,7 +166,7 @@ $(document).ready(function(){
             title: '宿舍表现',
             align: 'center',
             editable: {
-                mode: 'inline',
+                mode: 'popup',
                 type: 'number',
                 title: '分数',
                 validate: function (value) {
@@ -180,7 +180,7 @@ $(document).ready(function(){
             title: '奖励分',
             align: 'center',
             editable: {
-                mode: 'inline',
+                mode: 'popup',
                 type: 'number',
                 title: '分数',
                 validate: function (value) {
@@ -194,7 +194,7 @@ $(document).ready(function(){
             title: '扣分',
             align: 'center',
             editable: {
-                mode: 'inline',
+                mode: 'popup',
                 type: 'number',
                 title: '分数',
                 validate: function (value) {
