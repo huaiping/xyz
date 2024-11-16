@@ -222,6 +222,7 @@ $(document).ready(function(){
                 success: function(data, status){
                     if (status == "success"){
                         alert('数据更新成功');
+                        $("#dataTable").bootstrapTable('refresh');
                     }
                 },
                 error: function(){
