@@ -84,8 +84,8 @@ $(document).ready(function(){
             editable: {
                 mode: 'popup',
                 type: 'number',
-                title: '分数',
-                validate: function (value) {
+                title: '政治思想素质',
+                validate: function(value) {
                     if (!$.trim(value)) {
                         return '得分不能为空';
                     }
@@ -98,8 +98,8 @@ $(document).ready(function(){
             editable: {
                 mode: 'popup',
                 type: 'number',
-                title: '分数',
-                validate: function (value) {
+                title: '集体活动',
+                validate: function(value) {
                     if (!$.trim(value)) {
                         return '得分不能为空';
                     }
@@ -112,8 +112,8 @@ $(document).ready(function(){
             editable: {
                 mode: 'popup',
                 type: 'number',
-                title: '分数',
-                validate: function (value) {
+                title: '研究性学习',
+                validate: function(value) {
                     if (!$.trim(value)) {
                         return '得分不能为空';
                     }
@@ -126,8 +126,8 @@ $(document).ready(function(){
             editable: {
                 mode: 'popup',
                 type: 'number',
-                title: '分数',
-                validate: function (value) {
+                title: '校园社团文化',
+                validate: function(value) {
                     if (!$.trim(value)) {
                         return '得分不能为空';
                     }
@@ -140,8 +140,8 @@ $(document).ready(function(){
             editable: {
                 mode: 'popup',
                 type: 'number',
-                title: '分数',
-                validate: function (value) {
+                title: '公益劳动',
+                validate: function(value) {
                     if (!$.trim(value)) {
                         return '得分不能为空';
                     }
@@ -154,8 +154,8 @@ $(document).ready(function(){
             editable: {
                 mode: 'popup',
                 type: 'number',
-                title: '分数',
-                validate: function (value) {
+                title: '日常行为',
+                validate: function(value) {
                     if (!$.trim(value)) {
                         return '得分不能为空';
                     }
@@ -168,8 +168,8 @@ $(document).ready(function(){
             editable: {
                 mode: 'popup',
                 type: 'number',
-                title: '分数',
-                validate: function (value) {
+                title: '宿舍表现',
+                validate: function(value) {
                     if (!$.trim(value)) {
                         return '得分不能为空';
                     }
@@ -182,8 +182,8 @@ $(document).ready(function(){
             editable: {
                 mode: 'popup',
                 type: 'number',
-                title: '分数',
-                validate: function (value) {
+                title: '奖励分',
+                validate: function(value) {
                     if (!$.trim(value)) {
                         return '得分不能为空';
                     }
@@ -196,8 +196,8 @@ $(document).ready(function(){
             editable: {
                 mode: 'popup',
                 type: 'number',
-                title: '分数',
-                validate: function (value) {
+                title: '扣分',
+                validate: function(value) {
                     if (!$.trim(value)) {
                         return '得分不能为空';
                     }
@@ -208,11 +208,29 @@ $(document).ready(function(){
             title: '备注',
             align: 'center'
         }],
-
         onEditableSave: function(field, row, oldValue, $el){
             //alert('思想政治素质'+row.sxzzsz+' 集体活动'+row.jthd);
+            $.ajax({
+                type: 'post',
+                url: './morality/update_json',
+                data: row,
+                //data:{
+                //    sxzzsz: row.sxzzsz,
+                //    jthd: row.jthd
+                //},
+                dataType: 'JSON',
+                success: function(data, status){
+                    if (status == "success"){
+                        alert('数据更新成功');
+                    }
+                },
+                error: function(){
+                    alert('数据更新失败');
+                },
+                complete: function(){
+                }
+            })
         }
-
     })
 });
 $(document).bind("contextmenu",function(){
