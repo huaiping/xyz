@@ -62,7 +62,8 @@ $(document).ready(function(){
         }, {
             field: 'xm',
             title: '姓名',
-            align: 'center'
+            align: 'center',
+            switchable: false
         }, {
             field: 'sfzh',
             title: '身份证号',

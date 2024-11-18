@@ -47,7 +47,7 @@ $(document).ready(function(){
         pagination: true,
         pageNumber: 1,
         pageSize: 12,
-        pageList: [12, 17],
+        pageList: [12, 17, 25],
         striped: true,
         showRefresh: true,
         showColumns: true,
@@ -63,7 +63,8 @@ $(document).ready(function(){
         columns: [{
             field: 'xm',
             title: '姓名',
-            align: 'center'
+            align: 'center',
+            switchable: false
         }, {
             field: 'xb',
             title: '性别',

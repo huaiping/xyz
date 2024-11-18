@@ -18,4 +18,13 @@ class Morality extends BaseController
         $data['morality'] = json_encode($morality);
         echo $data['morality'];
     }
+
+    public function update_json()
+    {
+        $data = $this->request->getPost('data');
+        $model = model(MoralityModel::class);
+        $morality = $model->updateMorality($data);
+        echo json_encode($data);
+    }
+
 }
