@@ -74,7 +74,12 @@ $(document).ready(function(){
         }, {
             field: 'xb',
             title: '性别',
-            align: 'center',            
+            align: 'center',
+            sortable: true
+        }, {
+            field: '民族',
+            title: '民族',
+            align: 'center',
             sortable: true
         }, {
             field: 'sfzh',

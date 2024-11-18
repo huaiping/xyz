@@ -26,5 +26,4 @@ class Morality extends BaseController
         $morality = $model->updateMorality($data);
         echo json_encode($data);
     }
-
 }
