@@ -87,8 +87,8 @@ $(document).ready(function(){
                 type: 'number',
                 title: '政治思想素质',
                 validate: function(value) {
-                    if (!$.trim(value)) {
-                        return '得分不能为空';
+                    if (!$.trim(value) || value < 0 || value > 20) {
+                        return '得分不在有效范围';
                     }
                 }
             }
@@ -101,8 +101,8 @@ $(document).ready(function(){
                 type: 'number',
                 title: '集体活动',
                 validate: function(value) {
-                    if (!$.trim(value)) {
-                        return '得分不能为空';
+                    if (!$.trim(value) || value < 0 || value > 20) {
+                        return '得分不在有效范围';
                     }
                 }
             }
@@ -115,8 +115,8 @@ $(document).ready(function(){
                 type: 'number',
                 title: '研究性学习',
                 validate: function(value) {
-                    if (!$.trim(value)) {
-                        return '得分不能为空';
+                    if (!$.trim(value) || value < 0 || value > 20) {
+                        return '得分不在有效范围';
                     }
                 }
             }
@@ -129,8 +129,8 @@ $(document).ready(function(){
                 type: 'number',
                 title: '校园社团文化',
                 validate: function(value) {
-                    if (!$.trim(value)) {
-                        return '得分不能为空';
+                    if (!$.trim(value) || value < 0 || value > 20) {
+                        return '得分不在有效范围';
                     }
                 }
             }
@@ -143,8 +143,8 @@ $(document).ready(function(){
                 type: 'number',
                 title: '公益劳动',
                 validate: function(value) {
-                    if (!$.trim(value)) {
-                        return '得分不能为空';
+                    if (!$.trim(value) || value < 0 || value > 20) {
+                        return '得分不在有效范围';
                     }
                 }
             }
@@ -157,8 +157,8 @@ $(document).ready(function(){
                 type: 'number',
                 title: '日常行为',
                 validate: function(value) {
-                    if (!$.trim(value)) {
-                        return '得分不能为空';
+                    if (!$.trim(value) || value < 0 || value > 20) {
+                        return '得分不在有效范围';
                     }
                 }
             }
@@ -171,8 +171,8 @@ $(document).ready(function(){
                 type: 'number',
                 title: '宿舍表现',
                 validate: function(value) {
-                    if (!$.trim(value)) {
-                        return '得分不能为空';
+                    if (!$.trim(value) || value < 0 || value > 20) {
+                        return '得分不在有效范围';
                     }
                 }
             }
@@ -185,8 +185,8 @@ $(document).ready(function(){
                 type: 'number',
                 title: '奖励分',
                 validate: function(value) {
-                    if (!$.trim(value)) {
-                        return '得分不能为空';
+                    if (!$.trim(value) || value < 0 || value > 20) {
+                        return '得分不在有效范围';
                     }
                 }
             }
@@ -199,8 +199,8 @@ $(document).ready(function(){
                 type: 'number',
                 title: '扣分',
                 validate: function(value) {
-                    if (!$.trim(value)) {
-                        return '得分不能为空';
+                    if (!$.trim(value) || value < 0 || value > 20) {
+                        return '得分不在有效范围';
                     }
                 }
             }
@@ -213,7 +213,7 @@ $(document).ready(function(){
             //alert('思想政治素质'+row.sxzzsz+' 集体活动'+row.jthd);
             $.ajax({
                 type: 'post',
-                url: './morality/update_json',
+                url: '<?php echo base_url('codeigniter/morality/update_json'); ?>',
                 data: row,
                 //data:{
                 //    sxzzsz: row.sxzzsz,

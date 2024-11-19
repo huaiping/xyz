@@ -61,6 +61,8 @@ $(document).ready(function(){
             worksheetName: 'teacher'
         },
         columns: [{
+            checkbox: true
+        }, {
             field: 'xm',
             title: '姓名',
             align: 'center',
