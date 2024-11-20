@@ -199,7 +199,7 @@ $(document).ready(function(){
                 type: 'number',
                 title: '扣分',
                 validate: function(value) {
-                    if (!$.trim(value) || value < 0 || value > 20) {
+                    if (!$.trim(value) || value > 0) {
                         return '得分不在有效范围';
                     }
                 }
@@ -210,16 +210,11 @@ $(document).ready(function(){
             align: 'center'
         }],
         onEditableSave: function(field, row, oldValue, $el){
-            //alert('思想政治素质'+row.sxzzsz+' 集体活动'+row.jthd);
             $.ajax({
                 type: 'post',
                 url: '<?php echo base_url('codeigniter/morality/update_json'); ?>',
                 data: row,
-                //data:{
-                //    sxzzsz: row.sxzzsz,
-                //    jthd: row.jthd
-                //},
-                dataType: 'JSON',
+                dataType: 'json',
                 success: function(data, status){
                     if (status == "success"){
                         alert('数据更新成功');
