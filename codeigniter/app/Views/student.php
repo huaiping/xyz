@@ -77,7 +77,7 @@ $(document).ready(function(){
             align: 'center',
             sortable: true
         }, {
-            field: '民族',
+            field: 'mz',
             title: '民族',
             align: 'center',
             sortable: true
@@ -102,7 +102,7 @@ $(document).ready(function(){
             title: '电话',
             align: 'center'
         }, {
-            field: 'jtzz',
+            field: 'xxjtzz',
             title: '详细家庭住址',
             visible: false
         }, {
@@ -120,19 +120,20 @@ $(document).ready(function(){
         }, {
             field: 'qsh',
             title: '寝室号',
-            align: 'center'
+            align: 'center',
+            visible: false
         }, {
             field: 'gkf',
             title: '高考分',
             align: 'center',
             visible: false
         }, {
-            field: '大学录取院校',
+            field: 'dxlqyx',
             title: '大学录取院校',
             align: 'center',
             visible: false
         }, {
-            field: '录取专业',
+            field: 'lqzy',
             title: '录取专业',
             align: 'center',
             visible: false

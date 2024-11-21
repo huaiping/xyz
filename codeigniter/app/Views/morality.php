@@ -79,7 +79,7 @@ $(document).ready(function(){
             title: '学分',
             align: 'center'
         }, {
-            field: 'sxzzsz',
+            field: 'zzsxsz',
             title: '政治思想素质',
             align: 'center',
             editable: {
@@ -113,9 +113,9 @@ $(document).ready(function(){
             editable: {
                 mode: 'popup',
                 type: 'number',
-                title: '研究性学习',
+                title: '研究性学习和社会实践活动',
                 validate: function(value) {
-                    if (!$.trim(value) || value < 0 || value > 20) {
+                    if (!$.trim(value) || value < 0 || value > 30) {
                         return '得分不在有效范围';
                     }
                 }
@@ -127,7 +127,7 @@ $(document).ready(function(){
             editable: {
                 mode: 'popup',
                 type: 'number',
-                title: '校园社团文化',
+                title: '校园文件建设活动和社团文化活动',
                 validate: function(value) {
                     if (!$.trim(value) || value < 0 || value > 20) {
                         return '得分不在有效范围';
@@ -141,7 +141,7 @@ $(document).ready(function(){
             editable: {
                 mode: 'popup',
                 type: 'number',
-                title: '公益劳动',
+                title: '公益劳动和青年志愿者活动',
                 validate: function(value) {
                     if (!$.trim(value) || value < 0 || value > 20) {
                         return '得分不在有效范围';
@@ -169,7 +169,7 @@ $(document).ready(function(){
             editable: {
                 mode: 'popup',
                 type: 'number',
-                title: '宿舍表现',
+                title: '宿舍行为表现',
                 validate: function(value) {
                     if (!$.trim(value) || value < 0 || value > 20) {
                         return '得分不在有效范围';
@@ -185,7 +185,7 @@ $(document).ready(function(){
                 type: 'number',
                 title: '奖励分',
                 validate: function(value) {
-                    if (!$.trim(value) || value < 0 || value > 20) {
+                    if (!$.trim(value) || value < 0 || value > 30) {
                         return '得分不在有效范围';
                     }
                 }

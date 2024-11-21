@@ -9,7 +9,7 @@ class TeacherModel extends Model
     public function getTeacher()
     {
         $db = \Config\Database::connect();
-        $query = $db->query('SELECT xm, xb, mz, xk, sfzh, cjgz, csny, lxdh, byyx, zy, xl, xw, bm, bz FROM teachers');
+        $query = $db->query('SELECT xm, xb, mz, jg, zzmm, rjxk, sfzh, cjgzsj, csny, lxdh, byyx, zy, zqxl, zqxw, xl, xw, pth, zyjszw, jszg, gwdj, bm, bz FROM teachers');
         $results = $query->getResult();
         return $results;
     }

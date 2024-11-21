@@ -78,16 +78,16 @@ $(document).ready(function(){
             align: 'center',
             sortable: true
         }, {
-            field: '籍贯',
+            field: 'jg',
             title: '籍贯',
             align: 'center'
         }, {
-            field: '政治面貌',
+            field: 'zzmm',
             title: '政治面貌',
             align: 'center',
             sortable: true
         }, {
-            field: 'xk',
+            field: 'rjxk',
             title: '任教学科',
             align: 'center',
             sortable: true
@@ -97,7 +97,7 @@ $(document).ready(function(){
             align: 'center',
             visible: false
         }, {
-            field: 'cjgz',
+            field: 'cjgzsj',
             title: '参加工作时间',
             align: 'center'
         }, {
@@ -118,12 +118,12 @@ $(document).ready(function(){
             title: '专业',
             align: 'center'
         }, {
-            field: '职前学历',
+            field: 'zqxl',
             title: '职前学历',
             align: 'center',
             visible: false
         }, {
-            field: '职前学位',
+            field: 'zqxw',
             title: '职前学位',
             align: 'center',
             visible: false
@@ -136,20 +136,20 @@ $(document).ready(function(){
             title: '学位',
             align: 'center'
         }, {
-            field: '普通话',
+            field: 'pth',
             title: '普通话',
             align: 'center',
             visible: false
         }, {
-            field: '专业技术职务',
+            field: 'zyjszw',
             title: '专业技术职务',
             align: 'center'
         }, {
-            field: '教师资格',
+            field: 'jszg',
             title: '教师资格',
             align: 'center'
         }, {
-            field: '岗位等级',
+            field: 'gwdj',
             title: '岗位等级',
             align: 'center',
             sortable: true
