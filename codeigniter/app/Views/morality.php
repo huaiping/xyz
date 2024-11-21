@@ -127,7 +127,7 @@ $(document).ready(function(){
             editable: {
                 mode: 'popup',
                 type: 'number',
-                title: '校园文件建设活动和社团文化活动',
+                title: '校园文化建设活动和社团文化活动',
                 validate: function(value) {
                     if (!$.trim(value) || value < 0 || value > 20) {
                         return '得分不在有效范围';
