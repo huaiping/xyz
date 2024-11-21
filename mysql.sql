@@ -57,16 +57,6 @@ CREATE TABLE IF NOT EXISTS `teachers` (
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-CREATE TABLE IF NOT EXISTS `members` (
-    `id` int NOT NULL AUTO_INCREMENT,
-    `account` varchar(11) NOT NULL,
-    `password` varchar(255) NOT NULL,
-    `name` varchar(16) NOT NULL,
-    `group` varchar(20) NOT NULL,
-    `status` varchar(20) NOT NULL,
-    PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
 CREATE TABLE IF NOT EXISTS `morality` (
     `id` int NOT NULL AUTO_INCREMENT,
     `xh` varchar(6) NOT NULL,
@@ -84,5 +74,26 @@ CREATE TABLE IF NOT EXISTS `morality` (
     `jlf` int(2) NOT NULL,
     `kf` int(2) NOT NULL,
     `bz` varchar(60) NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `members` (
+    `id` int NOT NULL AUTO_INCREMENT,
+    `account` varchar(11) NOT NULL,
+    `password` varchar(255) NOT NULL,
+    `name` varchar(16) NOT NULL,
+    `group` varchar(20) NOT NULL,
+    `timestamp` int(10) NOT null,
+    `status` varchar(20) NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+CREATE TABLE IF NOT EXISTS `library` (
+    `id` int NOT NULL AUTO_INCREMENT,
+    `title` varchar(120) NOT NULL,
+    `description` varchar(255) NOT NULL,
+    `attachment` varchar(255) NOT NULL,
+    `timestamp` int(10) NOT null,
+    `status` varchar(20) NOT NULL,
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
