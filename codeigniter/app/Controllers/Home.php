@@ -8,4 +8,11 @@ class Home extends BaseController
     {
         return view('welcome_message');
     }
+
+    public function logout()
+    {
+        $session = session();
+        $session->destroy();
+        return redirect()->to(base_url('codeigniter/'));
+    }
 }
