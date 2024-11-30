@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class HomeModel extends Model
 {
-    public function getAuthority()
+    public function getAuthority($data)
     {
         $db = \Config\Database::connect();
         $query = $db->query("SELECT account, password, name, group, status FROM members WHERE account='".$data['account']."';");

@@ -13,7 +13,7 @@ class Home extends BaseController
     {
         $data = $this->request->getPost();
         $model = model(HomeModel::class);
-        $authority = $model->getAuthority();
+        $authority = $model->getAuthority($data);
     }
 
     public function logout()
