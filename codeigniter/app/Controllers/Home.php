@@ -9,6 +9,13 @@ class Home extends BaseController
         return view('welcome_message');
     }
 
+    public function login()
+    {
+        $session = session();
+        $model = model(HomeModel::class);
+        $authority = $model->getAuthority();
+    }
+
     public function logout()
     {
         $session = session();

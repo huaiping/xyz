@@ -7,7 +7,6 @@
     <title>综合信息服务管理平台</title>
     <link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/twitter-bootstrap/5.3.3/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
-    <link rel="stylesheet" href="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
 <body>
 <nav class="navbar navbar-expand-sm bg-body-tertiary" data-bs-theme="dark">
@@ -18,8 +17,8 @@
 <div class="m-5">
     <form>
         <div class="col-md-3 offset-md-4">
-            <label for="telephone" class="form-label">账号</label>
-            <input type="telephone" class="form-control form-control-lg" id="telephone" placeholder="请输入账号" />
+            <label for="account" class="form-label">账号</label>
+            <input type="account" class="form-control form-control-lg" id="account" placeholder="请输入账号" />
         </div>
         <div class="col-md-3 offset-md-4">
             <label for="password" class="form-label">密码</label>
