@@ -15,14 +15,14 @@
     </div>
 </nav>
 <div class="m-5">
-    <form>
+    <form action="login" method="POST">
         <div class="col-md-3 offset-md-4">
             <label for="account" class="form-label">账号</label>
-            <input type="account" class="form-control form-control-lg" id="account" placeholder="请输入账号" />
+            <input type="text" class="form-control form-control-lg" id="account" name="account" placeholder="请输入账号" />
         </div>
         <div class="col-md-3 offset-md-4">
             <label for="password" class="form-label">密码</label>
-            <input type="password" class="form-control form-control-lg" id="password" placeholder="请输入密码" />
+            <input type="password" class="form-control form-control-lg" id="password" name="password" placeholder="请输入密码" />
         </div>
         <button type="submit" class="btn btn-primary btn-lg col-md-3 offset-md-4" style="margin-top:20px;">登录</button>
     </form>

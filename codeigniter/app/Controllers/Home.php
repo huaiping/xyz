@@ -6,12 +6,12 @@ class Home extends BaseController
 {
     public function index(): string
     {
-        return view('welcome_message');
+        return view('login');
     }
 
     public function login()
     {
-        $session = session();
+        $data = $this->request->getPost();
         $model = model(HomeModel::class);
         $authority = $model->getAuthority();
     }
