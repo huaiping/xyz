@@ -9,7 +9,7 @@ class HomeModel extends Model
     public function getAuthority($data)
     {
         $db = \Config\Database::connect();
-        $query = $db->query("SELECT account, password, name, group, status FROM members WHERE account='".$data['account']."';");
+        $query = $db->query("SELECT `group` FROM members WHERE account='".$data['account']."' and password='".$data['password']."';");
         $results = $query->getResult();
         return $results;
     }
