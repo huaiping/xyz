@@ -10,7 +10,7 @@ class HomeModel extends Model
     {
         $db = \Config\Database::connect();
         $query = $db->query("SELECT `group` FROM members WHERE account='".$data['account']."' and password='".$data['password']."';");
-        $results = $query->getResult();
+        $results = $query->getRow();
         return $results;
     }
 }
