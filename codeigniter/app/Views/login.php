@@ -15,14 +15,14 @@
     </div>
 </nav>
 <div class="m-5">
-    <form action="login" method="POST">
+    <form action="<?php echo base_url('codeigniter/login'); ?>" method="POST">
         <div class="col-md-3 offset-md-4">
             <label for="account" class="form-label">账号</label>
-            <input type="text" class="form-control form-control-lg" id="account" name="account" placeholder="请输入账号" />
+            <input type="text" class="form-control form-control-lg" id="account" name="account" value="" placeholder="请输入账号">
         </div>
         <div class="col-md-3 offset-md-4">
             <label for="password" class="form-label">密码</label>
-            <input type="password" class="form-control form-control-lg" id="password" name="password" placeholder="请输入密码" />
+            <input type="password" class="form-control form-control-lg" id="password" name="password" value="" placeholder="请输入密码">
         </div>
         <button type="submit" class="btn btn-primary btn-lg col-md-3 offset-md-4" style="margin-top:20px;">登录</button>
     </form>

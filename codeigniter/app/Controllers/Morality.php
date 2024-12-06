@@ -8,7 +8,14 @@ class Morality extends BaseController
 {
     public function index()
     {
-        return view('morality');
+        $session = session();
+        if (null == $session->get('group')) {
+            return redirect()->to(base_url('codeigniter/'));
+        } elseif ($session->get('group') == '2400') {
+            return view('morality');
+        } else {
+            return view('morality_readonly');
+        }
     }
 
     public function get_json()

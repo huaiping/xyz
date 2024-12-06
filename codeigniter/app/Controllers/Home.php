@@ -13,14 +13,13 @@ class Home extends BaseController
 
     public function login()
     {
+        $session = session();
         $data = $this->request->getPost();
         $model = model(HomeModel::class);
         $authority = $model->getAuthority($data);
         if (isset($authority)) {
-            $session->set($authority->group);
-            if ($authority->group == "2400") {
-                return redirect()->to(base_url('codeigniter/morality'));
-            }
+            $session->set('group', $authority->group);
+            return redirect()->to(base_url('codeigniter/morality'));
         } else {
             return redirect()->to(base_url('codeigniter/'));
         }
