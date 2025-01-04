@@ -203,6 +203,106 @@ $(document).ready(function(){
                 }
             }
         }, {
+            field: 'jkfjl1',
+            title: '奖扣分记录1',
+            //visible: false,
+            editable: {
+                mode: 'popup',
+                type: 'text',
+                emptytext: '点击输入',
+                title: '奖扣分记录1',
+            }
+        }, {
+            field: 'jkfjl2',
+            title: '奖扣分记录2',
+            visible: false,
+            editable: {
+                mode: 'popup',
+                type: 'text',
+                emptytext: '点击输入',
+                title: '奖扣分记录2',
+            }
+        }, {
+            field: 'jkfjl3',
+            title: '奖扣分记录3',
+            visible: false,
+            editable: {
+                mode: 'popup',
+                type: 'text',
+                emptytext: '点击输入',
+                title: '奖扣分记录3',
+            }
+        }, {
+            field: 'jkfjl4',
+            title: '奖扣分记录4',
+            visible: false,
+            editable: {
+                mode: 'popup',
+                type: 'text',
+                emptytext: '点击输入',
+                title: '奖扣分记录4',
+            }
+        }, {
+            field: 'jkfjl5',
+            title: '奖扣分记录5',
+            visible: false,
+            editable: {
+                mode: 'popup',
+                type: 'text',
+                emptytext: '点击输入',
+                title: '奖扣分记录5',
+            }
+        }, {
+            field: 'jkfjl6',
+            title: '奖扣分记录6',
+            visible: false,
+            editable: {
+                mode: 'popup',
+                type: 'text',
+                emptytext: '点击输入',
+                title: '奖扣分记录6',
+            }
+        }, {
+            field: 'jkfjl7',
+            title: '奖扣分记录7',
+            visible: false,
+            editable: {
+                mode: 'popup',
+                type: 'text',
+                emptytext: '点击输入',
+                title: '奖扣分记录7',
+            }
+        }, {
+            field: 'jkfjl8',
+            title: '奖扣分记录8',
+            visible: false,
+            editable: {
+                mode: 'popup',
+                type: 'text',
+                emptytext: '点击输入',
+                title: '奖扣分记录8',
+            }
+        }, {
+            field: 'jkfjl9',
+            title: '奖扣分记录9',
+            visible: false,
+            editable: {
+                mode: 'popup',
+                type: 'text',
+                emptytext: '点击输入',
+                title: '奖扣分记录9',
+            }
+        }, {
+            field: 'jkfjl10',
+            title: '奖扣分记录10',
+            visible: false,
+            editable: {
+                mode: 'popup',
+                type: 'text',
+                emptytext: '点击输入',
+                title: '奖扣分记录10',
+            }
+        }, {
             field: 'bz',
             title: '备注',
             align: 'center'
