@@ -27,6 +27,11 @@
         <button type="submit" class="btn btn-primary btn-lg col-md-3 offset-md-4" style="margin-top:20px;">登录</button>
     </form>
 </div>
+<footer class="navbar fixed-bottom bg-body-tertiary" data-bs-theme="dark" style="height:60px;">
+    <div class="container-fluid">
+        <span class="text-center text-white" style="width:100%;">Copyright © 2025 All Rights Reserved.</span>
+    </div>
+</footer>
 <script src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/twitter-bootstrap/5.3.3/js/bootstrap.min.js"></script>
 </body>
