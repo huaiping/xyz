@@ -29,7 +29,7 @@
 </div>
 <footer class="navbar fixed-bottom bg-body-tertiary" data-bs-theme="dark" style="height:60px;">
     <div class="container-fluid">
-        <span class="text-center text-white" style="width:100%;">Copyright © 2025 All Rights Reserved.</span>
+        <span class="text-center text-white" style="width:100%;">Copyright © 2025 综合信息服务管理平台 All Rights Reserved.</span>
     </div>
 </footer>
 <script src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

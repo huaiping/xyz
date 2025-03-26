@@ -37,7 +37,7 @@
 <script src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/bootstrap-table/1.23.2/extensions/export/bootstrap-table-export.min.js"></script>
 <script src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
 <script src="https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/xlsx/0.18.5/xlsx.core.min.js"></script>
-<script src="https://unpkg.com/tableexport.jquery.plugin@1.30.0/tableExport.min.js"></script>
+<script src="https://unpkg.com/tableexport.jquery.plugin@1.33.0/tableExport.min.js"></script>
 <script>
 $(document).ready(function(){
     $("#dataTable").bootstrapTable({
